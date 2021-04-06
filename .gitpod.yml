@@ -2,5 +2,5 @@ image:
   file: .gitpod.Dockerfile
 
 tasks:
-  - init: pip3 -update 
-    command: 'echo "python3 main.py"'
+  - init: sudo yum install mysql-server 
+    command: 'pip3 install beautifulsoup4 && pip3 install requests && pip3 install lxml && pip3 install mysql-connector-python '

@@ -13,7 +13,7 @@ class_name={
     'company_name': 'joblist-comp-name',
     'skills':'srp-skills'}
 
-finder = fd.findInUrl(
+finder = fd.FindInUrl(
     "https://www.timesjobs.com/candidate/job-search.html?searchType=personalizedSearch&from=submit&txtKeywords=python&txtLocation=",
     tag_name,
     class_name,

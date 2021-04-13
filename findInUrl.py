@@ -71,6 +71,9 @@ class FindInUrl:
                 skills = tag.find(self.tag_name['skills'], class_=self.class_name['skills']).text.replace(' ', '') \
                     .replace('\r', '').replace('\n', '')
 
-                jobs.insert(0, [company_name, skills, published_date, apply_link])
+                jobs.insert(0, {'company_name':company_name,
+                                'skills':skills,
+                                'published_date':published_date,
+                                'apply_link':apply_link})
 
         return jobs
